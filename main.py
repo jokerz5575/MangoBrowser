@@ -70,7 +70,11 @@ class MainWindow(QMainWindow):
     def navigate_to_url(self):
         url = self.url_bar.text()
         print(QUrl(url))
-        self.browser.setUrl(QUrl("https://"+url))
+        if(url.startswith('https://')):
+            self.browser.setUrl(QUrl(url))
+        else:
+            self.browser.setUrl(QUrl("https://"+url))
+        
 
     def update_url(self, q):
         self.url_bar.setText(q.toString())
@@ -108,10 +112,6 @@ class MainWindow(QMainWindow):
         else:
             newUrl = "https://" + newUrl
             setSettingsData('defaultUrl', newUrl)
-        
-        pass
-
-
 
 
 app = QApplication(sys.argv)
