@@ -1,1 +1,12 @@
+<<<<<<< HEAD
 [{"defaultUrl": "https://startlap.hu"}]
+=======
+[
+  {
+    "defaultUrl": "https://google.com",
+    "userName" : "J. Doe",
+    "colorTheme" : "dark",
+    "version" : "0.1"
+  }
+]
+>>>>>>> 505ac9c9fe40d641b116a1728fcbf4a9ebab6d6a
