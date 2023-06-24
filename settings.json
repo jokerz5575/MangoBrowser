@@ -1,1 +1,8 @@
-[{"defaultUrl": "https://google.com"}]
+[
+  {
+    "defaultUrl": "https://google.com",
+    "userName" : "J. Doe",
+    "colorTheme" : "dark",
+    "version" : "0.1"
+  }
+]
